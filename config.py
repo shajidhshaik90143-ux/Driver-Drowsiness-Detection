@@ -1,0 +1,26 @@
+"""Configuration for Driver Drowsiness Detection."""
+
+CAMERA_INDEX = 0
+FRAME_WIDTH = 1280
+FRAME_HEIGHT = 720
+
+# Detection thresholds
+EAR_THRESHOLD = 0.21
+EYE_CLOSED_SECONDS = 1.5
+
+MAR_THRESHOLD = 0.62
+YAWN_SECONDS = 1.0
+
+# Alert behavior
+ALARM_COOLDOWN_SECONDS = 4.0
+EVENT_COOLDOWN_SECONDS = 8.0
+
+# UI
+WINDOW_NAME = "Driver Drowsiness Detection"
+SHOW_LANDMARKS = False
+MIRROR_CAMERA = True
+
+# MediaPipe
+MAX_NUM_FACES = 1
+MIN_DETECTION_CONFIDENCE = 0.55
+MIN_TRACKING_CONFIDENCE = 0.55
